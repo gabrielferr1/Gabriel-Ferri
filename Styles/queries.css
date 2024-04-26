@@ -1,0 +1,148 @@
+@media (max-width: 1000px) {
+    div.home-container {
+        margin-left: 10%;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    /* Gerais */
+
+    /* Home */
+    section#home {
+        height: auto;
+    }
+
+    /* Menu */
+    header {
+        justify-content: space-between;
+    }
+    .remover-menu-list {
+        display: none;
+    }
+    .menu-mobile-container {
+        display: flex;
+    }
+
+    /*Home*/
+    div.home-social-media {
+        display: none;
+    }
+    div.home-container {
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.home-apresentacao {
+        width: 80%;
+        text-align: center;
+    }
+    .home-titulo {
+        display: none;
+    }
+    h1.home-titulo-mobile {
+        display: block;
+        font-size: 3rem;
+        margin-top: 15%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .home-paragrafo1 {
+        margin-bottom: 5%;
+    }
+    #home-paragrafo2 {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #home-botao {
+        display: none;
+    }
+    #home-img {
+        display: none;
+    }
+    img#home-img-mobile {
+        display: block;
+        height: 200px;
+        width: 200px;
+        filter: drop-shadow(0px 0px 6px var(--cor-secundaria));
+        margin-bottom: 10%;
+    }
+
+    /* Sobre Mim */
+    .sobremim-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.sobremim-apresentacao {
+        width: 80%;
+    }
+    div.sobremim-skills {
+        width: 80%;
+    }
+    .sobremim-paragrafo {
+        margin-bottom: 10%;
+    }
+
+    /* Projetos */
+    .projetos-container {
+        width: 80%;
+    }
+
+    div.projeto-criptografador, div.projeto-numero-secreto {
+        flex-direction: column;
+    }
+
+    div.projetos-texto, img.projetos-imagens {
+        width: 100%;
+    }
+    div.projetos-texto-end {
+        text-align: left;
+    }
+
+    /* Contato */
+    div.formcontato-container {
+        width: 80%;
+        margin: 0% 10%;
+    }
+    div.formcontato-form-box {
+        flex-direction: column;
+        gap: 0px;
+        justify-content: flex-start;
+    }
+    .formcontato-input, .formcontato-form {
+        width: 100%;
+    }
+    .contato-paragrafo,
+    .titulos-principais.contato-titulo, .projeto-paragrafo {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    /* Footer */
+    section#footer {
+        gap: 15%;
+    }
+
+    i.footer-social {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+    .footer-paragrafo {
+        font-size: 1rem;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 500px) {
+    /* Footer */
+    section#footer {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 20px;
+    }
+    .footer-social {
+        margin-bottom: 10px;
+    }
+}

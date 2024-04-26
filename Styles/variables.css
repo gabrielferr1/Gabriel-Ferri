@@ -1,0 +1,111 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor-bg: rgb(230, 230, 230);
+    --cor-bg2: rgb(235, 235, 235);
+    --cor-primaria: rgb(60, 60, 60);
+    --cor-secundaria: rgb(140, 0, 255);
+    --cor-linha-menu: rgba(50, 50, 50, 0.090);
+    --font-primaria: "Josefin Sans", sans-serif;
+}
+[data-theme='dark'] {
+    --cor-bg: rgb(30, 30, 30);
+    --cor-bg2: rgb(35, 35, 35);
+    --cor-primaria: rgb(230, 230, 230);
+    --cor-secundaria: rgb(140, 0, 255);
+    --cor-linha-menu: rgba(180, 180, 180, 0.09);
+}
+
+body {
+    background-color: var(--cor-bg);
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
+
+section {
+    padding: 65px 0px;
+}
+
+a {
+    color: var(--cor-primaria);
+    transition: 0.3s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.titulos-principais {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.titulos-secundarios {
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--cor-secundaria);
+}
+
+.paragrafo {
+    text-indent: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.espacamento {
+    margin-bottom: 60px;
+}
+
+.link {
+    text-decoration: underline;
+}
+.link:hover {
+    text-decoration: line-through;
+}
+
+.botao {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border-radius: 8px;
+    padding: 12px 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+    white-space: nowrap;
+}
+.botao:hover {
+    box-shadow: 0px 0px 5px var(--cor-secundaria);
+}
+
+.destaque-texto {
+    color: var(--cor-secundaria);
+}
+
+.lista {
+    content: ' ';
+    width: 25px;
+    margin: 0 auto;
+    height: 5.5px;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tamanho-icons {
+    display: inline-block;
+    color: var(--cor-primaria);
+    font-size: 2.2rem;
+    margin-top: 25px;
+}
+.tamanho-icons:not(:last-child) {
+    margin-right: 15px;
+}

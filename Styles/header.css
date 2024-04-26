@@ -1,0 +1,126 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 40px 0px 40px;
+    position: fixed;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.background-color {
+    background-color: var(--cor-bg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.074);
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+.menu__list__item a {
+    position: relative;
+    padding-bottom: 2px;
+}
+.menu__list__item a::after {
+    content: ' ';
+    width: 0%;
+    height: 2.3px;
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menu__list__item a:hover::after {
+    width: 100%;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Menu / Versão Mobile/Tablet */
+.menu-mobile-container {
+    display: none;
+}
+
+.menu-lateral-img {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-list-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list-mobile-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 10%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--cor-linha-menu);
+}
+.menu-list-mobile-item:hover {
+    opacity: 50%;
+}
+
+.menu-btn {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    font-size: 1.65rem;
+    cursor: pointer;
+    padding: 1.5px;
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--cor-bg2); /* Cor do fundo do menu */
+    overflow-x: hidden;
+    transition: width 0.3s;
+    z-index: 2; /* Posiciona o menu sobre o fundo */
+    padding-top: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.248); /* Sombra suave no menu */
+}
+
+.menu-mobile.abrir {
+    width: 40%; /* Largura do menu quando aberto */
+}
+
+.fechar-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--cor-primaria);
+    font-size: 1.65em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

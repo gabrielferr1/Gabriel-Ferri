@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo-ferri.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/main.css">
+    <title>Gabriel Ferri</title>
+</head>
+<body>
+    <!-- Sessão de Menu  -->
+    <header id="menu">
+        <img src="images/LogoDesenho_gf.png" id="logo" alt="Logo em escrita do Gabriel Ferri">
+        <nav class="remover-menu-list">
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#home">Home</a></li>
+                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
+                <li class="menu__list__item"><a href="#projetos">Projetos</a></li>
+                <li class="menu__list__item"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu-lateral-img">
+            <img src="images/icons8-verão-48.png" id="icon" alt="Imagem que ilustra um botão. Lua roxa para mudar de tema do claro para o escuro">
+            <div class="menu-mobile-container">
+                <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+                <div class="menu-mobile" id="menu-mobile">
+                    <button class="fechar-btn" onclick="toggleMenu()"><i class="far fa-times-circle"></i></button>
+                    <nav>
+                        <ul class="menu-list-mobile">
+                            <li class="menu-list-mobile-item"><a href="#home" onclick="closeMenu()">Home</a></li>
+                            <li class="menu-list-mobile-item"><a href="#sobremim" onclick="closeMenu()">Sobre mim</a></li>
+                            <li class="menu-list-mobile-item"><a href="#projetos" onclick="closeMenu()">Projetos</a></li>
+                            <li class="menu-list-mobile-item"><a href="#contato" onclick="closeMenu()">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Sessão de home/Menu Social -->
+        <section id="home">
+            <div class="home-social-media">
+                <ul class="menu-social-media">
+                    <li><a target="_blank" class="social-media-item" href="https://www.linkedin.com/in/gabriel-ferri-dev/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a target="_blank" class="social-media-item" href="https://api.whatsapp.com/send?phone=5521975620441&text=Ol%C3%A1%2C%20Gabriel%21"><i class="fab fa-whatsapp-square"></i></a></li>
+                    <li><a target="_blank" class="social-media-item" href="https://github.com/gabrielferr1"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="home-container">
+                <div class="home-apresentacao">
+                    <div id="home-posicionar">
+                        <h1 class="home-titulo">Gabriel<br><div class="home-titulo-espaco">Ferri</div></h1>
+                        <h1 class="home-titulo-mobile">Gabriel Ferri</h1>
+                        <p class="home-paragrafo1">Desenvolvedor <strong class="destaque-texto">Front-End</strong></p>
+                        <p id="home-paragrafo2" class="paragrafo espacamento">Quer dar um novo visual para sua empresa? você achou o lugar certo! Prazer, me chamo Gabriel e sou Desenvolvedor Front-End, estudante da <a class="link" target="_blank" href="https://www.alura.com.br/">Alura</a> + <a class="link" target="_blank" href="https://www.oracle.com/br/education/oracle-next-education/">Oracle</a>.</p>
+                        <a class="botao" id="home-botao" href="#contato">Contato</a>
+                    </div>
+                </div>
+                <img id="home-img" src="images/Gabriel-Ferri.png" alt="Imagem de um boneco que segue o padrão da disney. Ilustra o Gabriel">
+                <img id="home-img-mobile" src="images/Picsart_24-04-24_21-46-24-041.png" alt="Imagem de um boneco dentro de um forma redonda roxa que segue o padrão da disney. Ilustra o Gabriel">
+            </div>
+        </section>
+
+        <!-- Sessão sobre mim -->
+        <section id="sobremim">
+            <h2 class="titulos-principais">Sobre mim</h2>
+            <div class="lista"></div>
+            <div class="sobremim-container">
+                <div class="sobremim-apresentacao">
+                    <h3 class="titulos-secundarios">Vem me conhecer!!</h3>
+                    <p class="paragrafo sobremim-paragrafo">Sou um estudante determinado e entusiasta que se dedica a transformar ideias em experiências visuais incríveis.<br> <br>
+                    Atualmente, estou em uma formação especializada em front-end pela Oracle, aprofundando e acrescentando conhecimentos em tecnologias modernas.<br> <br>
+                    O que me move é a oportunidade de aprimorar a visibilidade da sua empresa. Sou motivado pela ideia de traduzir conceitos em códigos e interfaces que impactam e envolvem os usuários. Acredito que cada linha de código que escrevo é uma chance de criar algo significativo e inspirador.<br> <br>
+                    Junte-se a mim nessa jornada digital. Vamos transformar seus pensamentos em realidades visíveis.</p>
+                </div>
+                <div class="sobremim-skills">
+                    <h3 class="titulos-secundarios">Skills</h3>
+                    <div class="skills-flex">
+                        <p class="skills-itens">HTML</p>
+                        <p class="skills-itens">CSS</p>
+                        <p class="skills-itens">Javascript</p>
+                        <p class="skills-itens">React</p>
+                        <p class="skills-itens">Git</p>
+                        <p class="skills-itens">Github</p>
+                        <p class="skills-itens">Design Responsivo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão de Projetos-->
+        <section id="projetos">
+            <h2 class="titulos-principais">Projetos</h2>
+            <div class="lista"></div>
+            <p class="projeto-paragrafo espacamento">Aqui você encontrará projetos pessais e de futuros clientes.<br>Área em Desenvolvimento!!</p>
+            <div class="projetos-container">
+                <div class="projeto-criptografador">
+                    <img class="projetos-imagens" src="images/Captura de tela 2024-04-20 180413.png" alt="Captura de Tela do Projeto de criptografia de texto do Gabriel">
+                    <div class="projetos-texto">
+                        <h3 class="titulos-secundarios">Criptografador de Texto</h3>
+                        <div>
+                            <a class="botao" href="https://gabrielferr1.github.io/criptografador-alurone/" target="_blank">Ver Demo</a>
+                        </div>
+                        <p class="tamanho-icons"><i class="fab fa-html5"></i></p>
+                        <p class="tamanho-icons"><i class="fab fa-css3-alt"></i></p>
+                        <p class="tamanho-icons"><i class="fab fa-js-square"></i></p>
+                    </div>
+                </div>
+                <div class="projeto-numero-secreto">
+                    <img class="projetos-imagens" src="images/Captura de tela 2024-04-20 190220.png" alt="Captura de Tela do Projeto do jogo do Número Secreto feito através do cruso da Alura+Oracla">
+                    <div class="projetos-texto projetos-texto-end">
+                        <h3 class="titulos-secundarios">Jogo do Número Secreto</h3>
+                        <div>
+                            <a class="botao projeto-botao" href="https://gabrielferr1.github.io/jogo-do-numero-secreto/" target="_blank">Ver Demo</a>
+                        </div>
+                        <p class="tamanho-icons"><i class="fab fa-html5"></i></p>
+                        <p class="tamanho-icons"><i class="fab fa-css3-alt"></i></p>
+                        <p class="tamanho-icons"><i class="fab fa-js-square"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão de Contato -->
+        <section id="contato">
+            <h2 class="titulos-principais contato-titulo">Me mande uma mensagem!</h2>
+            <div class="lista lista-color"></div>
+            <p class="contato-paragrafo">Tem alguma proposta? quer montar alguma coisa juntos<br>ou só quer conversar?<br>Não perca tempo e entre em contato!</p>
+            <div class="formcontato-container">
+                <form action="" id="form" class="formcontato-form">
+                    <div class="formcontato-form-box">
+                        <div class="formcontato-ajuste-width">
+                            <label for="nome">Seu nome</label>
+                            <input class="formcontato-input required" name="nome" type="text" id="nome" placeholder="Ensira seu nome" required>
+                        </div>
+                        <div class="formcontato-ajuste-width">
+                            <label for="email">Endereço de e-mail</label>
+                            <input class="formcontato-input required" name="email" type="email" id="email" placeholder="Ensira seu endereço de E-mail" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="mensagem">Sua mensagem</label>
+                        <textarea class="formcontato-textarea required" rows="3" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+                    </div>
+                    <button class="formcontato__botao">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sessão de Footer/Rodapé -->
+    <footer>
+        <section id="footer">
+            <div class="Créditos">
+                <h2 class="footer-titulo">Feito</h2>
+                <p class="footer-paragrafo">Por Gabriel Oliveira Ferri</p>
+                <div class="footer-linha"></div>
+                <p class="footer-paragrafo">&#169; Copyright | 2024</p>
+            </div>
+            <div class="Social">
+                <h2 class="footer-titulo">Social</h2>
+                <a target="_blank" href="https://www.linkedin.com/in/gabriel-ferri-dev/"><i class="fab fa-linkedin-in footer-social"></i></a>
+                <a target="_blank" href="mailto:ferrigabriel99@gmail.com"><i class="far fa-envelope footer-social"></i></a>
+                <a target="_blank" href="https://github.com/gabrielferr1"><i class="fab fa-github footer-social"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5521975620441&text=Ol%C3%A1%2C%20Gabriel%21"><i class="fab fa-whatsapp footer-social"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Script Linkado do seu documento de JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/validate.js"></script>
+</body>
+</html>
+
